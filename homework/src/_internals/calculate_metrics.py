@@ -2,7 +2,7 @@
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 
-def calculate_metrics(x, y, model):
+def calculate_metrics(model,x, y):
     y_pred = model.predict(x)
     mse = mean_squared_error(y, y_pred)
     mae = mean_absolute_error(y, y_pred)
